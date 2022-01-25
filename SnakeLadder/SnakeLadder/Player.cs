@@ -29,7 +29,6 @@ namespace SnakeLadder
                     case SNAKE:
                         Start += RolledDice;
                         Console.WriteLine("Got Ladder:" + Start);
-                      
                         break;
                     case LADDER:
                         Start -= RolledDice;
@@ -39,11 +38,6 @@ namespace SnakeLadder
                         Console.WriteLine("Invalid Option");
                         break;
                 }
-                if (Start < 0)
-                {
-                    Start = 0;
-                }
-               
             }
         }
     }
