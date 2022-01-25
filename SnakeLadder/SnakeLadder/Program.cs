@@ -11,6 +11,8 @@ namespace SnakeLadder
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to snake ladder");
+            Player player = new Player();
+            player.GamePlayed();
             Console.ReadLine();
         }
     }
