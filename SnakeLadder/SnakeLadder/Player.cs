@@ -24,11 +24,11 @@ namespace SnakeLadder
                 case NO_PLAY:
                     Console.WriteLine("No Play");
                     break;
-                case SNAKE:
+                case LADDER:
                     Start += RolledDice;
                     Console.WriteLine("Got Ladder:" + Start);
                     break;
-                case LADDER:
+                case SNAKE:
                     Start -= RolledDice;
                     Console.WriteLine("Snake Attack:" + Start);
                     break;
