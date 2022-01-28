@@ -8,7 +8,7 @@ namespace SnakeLadder
 {
     internal class Player
     {
-        public const int NO_PLAY = 0, SNAKE = 1, LADDER = 2;
+        public const int NO_PLAY = 0, SNAKE = 2, LADDER = 1;
         public int Start = 0;
         public int RolledDice;
         int Option = 0;
