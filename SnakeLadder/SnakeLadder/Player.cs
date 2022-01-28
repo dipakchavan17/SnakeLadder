@@ -8,7 +8,7 @@ namespace SnakeLadder
 {
     internal class Player
     {
-        public const int NO_PLAY = 0, SNAKE = 1, LADDER = 2, WINNING = 100;
+        public const int NO_PLAY = 0, SNAKE = 2, LADDER = 1, WINNING = 100;
         public int Start = 0;
         public int RolledDice;
         int Option = 0;
@@ -26,11 +26,11 @@ namespace SnakeLadder
                     case NO_PLAY:
                         Console.WriteLine("No Play");
                         break;
-                    case SNAKE:
+                    case LADDER:
                         Start += RolledDice;
                         Console.WriteLine("Got Ladder:" + Start);
                         break;
-                    case LADDER:
+                    case SNAKE:
                         Start -= RolledDice;
                         Console.WriteLine("Snake Attack:" + Start);
                         break;
